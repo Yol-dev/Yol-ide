@@ -1,5 +1,14 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: green;
+    background: rgb(13, 198, 38);
+    transition: all 0.2s;
 }
+
+#icon{
+    font-size: 64px;
+    color: black;
+    transition: all 0.2s;
+}
+
+.Page1 { display : block ; } .Page2 { display : none ; }
