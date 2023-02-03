@@ -15,8 +15,6 @@ function changeStyle() {
   }
 }
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const icon = document.getElementById("icon");
     icon.addEventListener("click", function() {
