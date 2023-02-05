@@ -1,0 +1,137 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(209, 142, 18);
+  transition: all 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Page1 { display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;margin:10vh 20px 0px 20px;align-items: center;} .Page2 { display:none;flex-direction:row;flex-wrap:wrap;justify-content:center;margin:10vh 20px 0px 20px;align-items: center;}
+
+
+
+/*------------------------------btn_style------------------------------*/
+
+.toggle-btn {
+box-shadow: 4px 4px 5px 2px rgb(0 0 0 / 25%);
+margin-left: 20px;
+margin-top: 10%;
+  z-index: 100;
+    box-sizing: border-box;
+  position: relative;
+  width: 133px;
+  height: 53px;
+  padding: 4px;
+  border-radius: 44px;
+  background-color: #c4c4c4;
+  background-image: url(day-bg.jpg);
+  background-size: cover;
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.toggle-btn .switch {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.25),inset 2px 0 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  cursor: pointer;
+}
+
+.toggle-btn.active {
+  background-image: url(night-bg.jpg);
+}
+.toggle-btn.active .switch {
+  transform: translateX(calc(133px - 53px));
+}
+
+/*------------------------------btn_style------------------------------*/
+
+
+/*------------------------------login------------------------------*/
+
+.textLogin {
+background:#ebddcb;
+width: 400px;
+height: 300px;
+
+}
+
+.login{
+background: pink;
+width: 440px;
+height: 440px;  
+display: flex;
+box-shadow: -20px 20px 8px 0px rgb(0 0 0 / 25%);
+}
+
+.h1-toggle-btnLogin{
+  display:flex;
+  align-items: center;
+}
+
+.h1login{
+font-size: 64px;
+margin-left: 10%;
+margin-bottom: 0px;
+}
+
+.textblahLogin{
+margin: 30px;
+}
+
+.alogin{
+color: red;
+text-decoration: none;
+}
+
+/*------------------------------login------------------------------*/
+
+/*------------------------------SignUp------------------------------*/
+
+.textSignUp {
+background:#ebddcb;
+width: 440px;
+height: 300px;
+
+}
+
+.SignUp{
+background: pink;
+width: 440px;
+height: 440px;  
+display: flex;
+box-shadow: -20px 20px 8px 0px rgb(0 0 0 / 25%);
+}
+
+.h1-toggle-btnSignUp{
+  display:flex;
+  align-items: center;
+}
+
+.h1SignUp{
+font-size: 64px;
+margin-left: 10%;
+margin-bottom: 0px;
+}
+
+.textblahSignUp{
+margin: 30px;
+}
+
+.aSignUp{
+color: red;
+text-decoration: none;
+}
+
+/*------------------------------SignUp------------------------------*/
+
+@media screen and (max-width: 880px){
+
+  .login {
+    box-shadow: -20px -20px 8px 0px rgb(0 0 0 / 25%);
+  }
+
+}
