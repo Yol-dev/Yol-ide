@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr"> 
+<head>
+  <meta charset="utf-8"> 
+  <!-- l'encodage de caractères utilisé du site -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Pour l adaptativité du site sur mobile -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <!-- Compatibilite avec edge -->
+  <title>Login Or Sign Up</title> 
+  <!-- Titre de la page -->
+    <link rel="stylesheet" href="LoginOrSignUp1.css"> <style></style> 
+    <!-- Link Css dans le sources ou ecris ton Css entre <style></style> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery CDN Link -->
+    <script src="LoginOrSignUp.js"></script>
+    <!-- Link Js dans le sources ou ecris ton Js entre >< -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+      <!-- Bibliothèques Pour les icon -->
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+      <!-- Le site :https://ionic.io/ionicons -->
+</head>
+    <body>
+    <div class="Page1" id="1">
+      <div class="textLogin">
+        <div class="h1-toggle-btnLogin">
+          <h1 class="h1login">Login</h1>
+          <div class="toggle-btn">
+            <span class="switch"></span>
+          </div>
+        </div>
+        <h2 class="textblahLogin">blah blah blah blah blah blah <a class="alogin" href="https://yol-dev.github.io/Yol-ide/">Yol.dev</a> blah blah blah blah blah<a onclick="BP_1()" class="alogin">SignUp</a> blah blah blah blah.</h2>
+      </div>
+        <div class="login">
+          <form action="/formlogin" method="POST">
+            <input type="text" placeholder="text"/>
+            <input type="password" placeholder="password"/>
+              <input type="submit"/>  
+          </form>
+        </div>  
+      </div>
+      <div class="Page2" id="2">
+        <div class="textSignUp">
+          <div class="h1-toggle-btnSignUp">
+            <h1 class="h1SignUp">SignUp</h1>
+            <div class="toggle-btn">
+              <span class="switch"></span>
+            </div>
+          </div>
+          <h2 class="textblahSignUp">blah blah blah blah blah blah <a class="aSignUp" href="https://yol-dev.github.io/Yol-ide/">Yol.dev</a> blah blah blah blah blah<a onclick="BP_1()" class="aSignUp">Login</a> blah blah blah blah.</h2>
+        </div>
+          <div class="SignUp">
+            <form action="/formlogin" method="POST">
+              <input type="text" placeholder="text"/>
+              <input type="email" placeholder="email"/>
+              <input type="password" placeholder="password"/>
+                <input type="submit"/>  
+            </form>
+          </div>  
+        </div>
+    </body>
+</html>
