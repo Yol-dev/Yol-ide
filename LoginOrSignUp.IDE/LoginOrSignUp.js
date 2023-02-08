@@ -5,6 +5,7 @@ $(document).ready(function () {
    });
 });
 
+
 function changeStyle() {
   var link = document.getElementsByTagName("link")[0];
   if (link.getAttribute("href") == "LoginOrSignUp1.css") {
