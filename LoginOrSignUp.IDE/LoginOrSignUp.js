@@ -30,5 +30,5 @@ function BP_1() { // fonction appele par le boutton
       else{
       document.getElementById('2').style.display = "flex";// affiche la div
       document.getElementById('1').style.display = "none";
-      }       
+      }
   }
