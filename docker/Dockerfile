@@ -1,3 +1,2 @@
-FROM ubuntu
-WORKDIR /home/pi/path
-CMD ["mkdir test1"]
+FROM alpine:3.14
+RUN apk add gcc
