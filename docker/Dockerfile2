@@ -1,3 +1,2 @@
 FROM debian:9
-RUN apt-get -y install gcc mono-mcs \
-CMD run gcc mono-mcs
+RUN apt-get -y install gcc mono-mcs
