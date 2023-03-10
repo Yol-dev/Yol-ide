@@ -1,8 +1,9 @@
-function changeStyle() {
-    var link = document.getElementsByTagName("link")[0];
-    if (link.getAttribute("href") == "IDE1.css") {
-      link.setAttribute("href", "IDE2.css");
-    } else {
-      link.setAttribute("href", "IDE1.css");
+
+  function BP_color() { // fonction appele par le boutton 
+    if(document.getElementById('color').style.display == "flex"){ //lorsque que tu click, si on voit la div
+    document.getElementById('color').style.display = "none";// tu la cache
     }
-  }
+      else{
+      document.getElementById('color').style.display = "flex";//sinon affiche la div
+      }       
+    }
