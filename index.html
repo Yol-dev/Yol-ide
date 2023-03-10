@@ -18,212 +18,6 @@
   <!-- Titre de la page -->
   
     <style id="style1">
-  
-    @font-face {
-        font-family: "Satoshi";
-        src: url("./fonts/Satoshi-Regular.ttf") format("truetype");
-    }
-    
-    body::-webkit-scrollbar {
-        width: 8px;
-    }
-    
-    body::-webkit-scrollbar-track {
-        background-color: #2C1438;  
-    }
-    
-    body::-webkit-scrollbar-thumb {
-        border-radius: 15px;
-        background-color: #F1B9D7;
-    }
-    
-    body::-webkit-scrollbar-thumb:hover {
-        background-color: #b50713;
-    }
-    
-    html {
-        font-family: "Satoshi", sans-serif;
-    }
-    
-    body{
-        background: linear-gradient(#054505, #054505);
-        overflow-x: hidden;
-    }
-    
-    .parent {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:  20% 40% 20%;
-        grid-column-gap: 0px;
-        grid-row-gap: 100px;
-    }
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 2 / 1 / 3 / 2; }
-    .div3 { grid-area: 3 / 1 / 4 / 2; }
-    
-    header{
-        padding: 10px 0px 10px 0px;
-        margin: 50px 15% 0px 15%;
-        background: #6fec83;
-        border-radius: 18px;
-        transform: rotate(2.4deg);
-        box-shadow: -15px 14px 20px rgb(242 235 243 / 20%);;
-        width: 70vw;
-    }
-    
-    header h1 {
-        color: #000000;
-        margin:0px;
-    }
-    
-    .logo{
-        width: 100px;
-        margin-right: 20px;
-    }
-    
-    .logofooter{
-        width: 100px;
-        margin-left: 10px;
-    }
-    
-    .title_logo[_ngcontent-mod-c48] {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .sectionchoix{
-        display: flex;
-        flex-direction: row;
-        gap: 90px;
-        align-items: center;
-        justify-content: center;
-        transform: rotate(-2.4deg);
-        flex-wrap: wrap;
-    }
-    
-    .casechoix{
-        background: linear-gradient(314deg, #6fec83 0%, #6fec83 100%);
-        width: 220px;
-        height: 200px;
-        border-radius: 40px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        box-shadow: 9px 19px 20px rgb(242 235 243 / 20%);
-    }
-    
-    #caseHome{border-radius: 35% 20% 38% 10% / 32% 35% 10% 10% ;}
-    #caseLoginOrSignUp{border-radius: 14% 29% 26% 50% / 33% 19% 38% 10% ;}
-    #casePageIDE{ border-radius:19% 10% 10% 34% / 31% 10% 31% 23%;}
-    
-    .bouttonchoix {
-        width: 200px;
-        border-radius: 9px;
-        background: #054505;
-        padding: 9px 59px;
-        display: flex;
-        justify-content: center;
-        box-shadow: 13px -10px 6px 1px rgba(255, 255, 255, 0.385);
-    }
-    
-    .achoix{
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    
-    .footer {
-        width: 100%;
-        margin: 0px auto;
-        box-shadow: -15px 14px 20px rgb(242 235 243 / 20%);
-        position: fixed ;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        height: 100px;
-        background: #6fec83;
-    }
-    
-    .footerobj {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-    }
-    
-    .footertext {
-        font-size: 26px;
-        color: rgb(0, 0, 0);
-        margin-left: 20px; 
-        font-weight : bold;
-    }
-    
-    .footerliens {
-        display: flex;
-    }
-    
-    .footerlien {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-    }
-    
-    .footerbut{
-        display: flex;
-        margin-left: 20px;
-        border-radius: 9px;
-        background: #054505;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 18px 14px 6px 1px rgb(255 255 255 / 39%);
-    }
-    
-    text{
-        color: #000000;
-        font-family: cursive;
-    }
-    
-    @media screen and (max-width:625px){
-    
-        .parent {
-            grid-row-gap: 0px;
-            grid-template-rows:  20% 80% 20%;
-        }
-    
-        .footertext {
-            display: none;
-        }
-    
-        .logo{
-            display: none;
-        }
-    
-        .sectionchoix{
-            display: flex;
-            flex-direction: row;
-            gap: 90px;
-            align-items: center;
-            justify-content: center;
-            transform: rotate(3.4deg);
-            flex-wrap: wrap;
-        }
-    
-        .footerliens {
-            display: block;
-        }
-    
-        .footerbut{
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-    }
-    </style>
-    
-    <style id="style2">
        @font-face {
             font-family: "Satoshi";
             src: url("./fonts/Satoshi-Regular.ttf") format("truetype");
@@ -251,7 +45,7 @@
         }
     
         body{
-            background: linear-gradient(#2C1438, #2C1438);
+            background: linear-gradient(#011C61, #011C61);
             overflow-x: hidden;
         }
     
@@ -269,9 +63,9 @@
         header{
             padding: 10px 0px 10px 0px;
             margin: 50px 15% 0px 15%;
-            background: #F1B9D7;
+            background: #c88c1d;
             border-radius: 18px;
-            transform: rotate(2.4deg);
+            transform: rotate(0deg);
             box-shadow: -15px 14px 20px rgb(242 235 243 / 20%);;
             width: 70vw;
         }
@@ -284,6 +78,7 @@
         .logo{
             width: 100px;
             margin-right: 20px;
+            margin-left: 10px;
         }
     
         .logofooter{
@@ -303,7 +98,7 @@
             gap: 90px;
             align-items: center;
             justify-content: center;
-            transform: rotate(-2.4deg);
+            transform: rotate(0deg);
             flex-wrap: wrap;
         }
     
@@ -320,9 +115,10 @@
             box-shadow: 9px 19px 20px rgb(242 235 243 / 20%);
         }
     
-        #caseHome{border-radius: 35% 20% 38% 10% / 32% 35% 10% 10% ;}
-        #caseLoginOrSignUp{border-radius: 14% 29% 26% 50% / 33% 19% 38% 10% ;}
-        #casePageIDE{ border-radius:19% 10% 10% 34% / 31% 10% 31% 23%;}
+        #caseHome{ border-radius:18px; }
+        #caseLoginOrSignUp{ border-radius:18px; }
+        #casePageIDE{ border-radius:18px; }
+        #caseFichier{ border-radius:18px; }
     
         .bouttonchoix {
             width: 200px;
@@ -413,7 +209,7 @@
                 gap: 90px;
                 align-items: center;
                 justify-content: center;
-                transform: rotate(3.4deg);
+                transform: rotate(0deg);
                 flex-wrap: wrap;
             }
     
@@ -424,6 +220,227 @@
             .footerbut{
                 margin-left: 20px;
                 margin-top: 10px;
+            }
+
+            header h1 {
+                color: #000000;
+                margin: 0px;
+                margin-left: 10px ;
+                margin-right: 10px;
+            }
+        }
+    </style>
+    
+    <style id="style2">
+       @font-face {
+            font-family: "Satoshi";
+            src: url("./fonts/Satoshi-Regular.ttf") format("truetype");
+        }
+    
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+    
+        body::-webkit-scrollbar-track {
+            background-color: #2C1438;  
+        }
+    
+        body::-webkit-scrollbar-thumb {
+            border-radius: 15px;
+            background-color: #F1B9D7;
+        }
+    
+        body::-webkit-scrollbar-thumb:hover {
+            background-color: #b50713;
+        }
+    
+        html {
+            font-family: "Satoshi", sans-serif;
+        }
+    
+        body{
+            background: linear-gradient(#2C1438, #2C1438);
+            overflow-x: hidden;
+        }
+    
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:  20% 40% 20%;
+            grid-column-gap: 0px;
+            grid-row-gap: 100px;
+        }
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; }
+    
+        header{
+            padding: 10px 0px 10px 0px;
+            margin: 50px 15% 0px 15%;
+            background: #F1B9D7;
+            border-radius: 18px;
+            transform: rotate(0deg);
+            box-shadow: -15px 14px 20px rgb(242 235 243 / 20%);;
+            width: 70vw;
+        }
+    
+        header h1 {
+            color: #000000;
+            margin:0px;
+        }
+    
+        .logo{
+            width: 100px;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+    
+        .logofooter{
+            width: 100px;
+            margin-left: 10px;
+        }
+    
+        .title_logo[_ngcontent-mod-c48] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .sectionchoix{
+            display: flex;
+            flex-direction: row;
+            gap: 90px;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(0deg);
+            flex-wrap: wrap;
+        }
+    
+        .casechoix{
+            background: linear-gradient(314deg, #F1B9D7 0%, #ef9fca 100%);
+            width: 220px;
+            height: 200px;
+            border-radius: 40px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 9px 19px 20px rgb(242 235 243 / 20%);
+        }
+    
+        #caseHome{ border-radius:18px; }
+        #caseLoginOrSignUp{ border-radius:18px; }
+        #casePageIDE{ border-radius:18px; }
+        #caseFichier{ border-radius:18px; }
+    
+        .bouttonchoix {
+            width: 200px;
+            border-radius: 9px;
+            background: #2C1438;
+            padding: 9px 59px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 13px -10px 6px 1px rgba(255, 255, 255, 0.385);
+        }
+    
+        .achoix{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    
+        .footer {
+            width: 100%;
+            margin: 0px auto;
+            box-shadow: -15px 14px 20px rgb(242 235 243 / 20%);
+            position: fixed ;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            background: #F1B9D7;
+        }
+    
+        .footerobj {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+    
+        .footertext {
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+            margin-left: 20px; 
+            font-weight : bold;
+        }
+    
+        .footerliens {
+            display: flex;
+        }
+    
+        .footerlien {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    
+        .footerbut{
+            display: flex;
+            margin-left: 20px;
+            border-radius: 9px;
+            background: #2C1438;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 18px 14px 6px 1px rgb(255 255 255 / 39%);
+        }
+    
+        text{
+            color: #000000;
+            font-family: cursive;
+        }
+    
+        @media screen and (max-width:625px){
+    
+            .parent {
+                grid-row-gap: 0px;
+                grid-template-rows:  20% 80% 20%;
+            }
+    
+            .footertext {
+                display: none;
+            }
+    
+            .logo{
+                display: none;
+            }
+    
+            .sectionchoix{
+                display: flex;
+                flex-direction: row;
+                gap: 90px;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(0deg);
+                flex-wrap: wrap;
+            }
+    
+            .footerliens {
+                display: block;
+            }
+    
+            .footerbut{
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+
+            header h1 {
+                color: #000000;
+                margin: 0px;
+                margin-left: 10px ;
+                margin-right: 10px;
             }
         }
     </style>
@@ -464,6 +481,12 @@
                                 <h2>Va voir le prototype de notre Page IDE</h2>
                                 <button class="bouttonchoix"><a href="/Yol-ide/Page.IDE/IDE.html" class="achoix">Page.Ide</a></button>
                             </div>
+                            <div class="casechoix" id="caseFichier">
+                                <img>
+                                <h2>Va voir le prototype de nos fichier</h2>
+                                <button class="bouttonchoix"><a href="/Yol-ide/Page.IDE/IDE.html" class="achoix">Page.fichier</a></button>
+                            </div>
+                                <!---------------a copie--------------->
                         </section>
                     </div>
                 </section>
