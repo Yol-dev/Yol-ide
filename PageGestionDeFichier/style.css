@@ -1,0 +1,136 @@
+body
+{
+    background-color: #1B1B1B;
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.left
+{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #012945;
+}
+
+.right
+{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #1B1B1B;
+}
+
+#yoldev
+{
+    color: #c6c6c7;
+    margin: 15px;
+    width: 25%;
+}
+
+.createbox
+{
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+#myfiletext
+{
+    margin-top: 30px;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.filesbox
+{
+    margin-left: 50px;
+    text-align: center;
+    background-color: #012945;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px #5A8BBA solid;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.filesbox:hover
+{
+    border: 4px #5A8BBA solid;
+}
+
+.filestop
+{
+    background-color: #1B1B1B;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.files
+{
+    display: flex;
+}
+
+#fichier
+{
+    margin-top: 165px;
+    margin-left: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+#searchbar
+{
+    background-color: #111d29;
+    color: #6a7179;
+    border: 0px;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#seemyproject
+{
+    background-color: #0b2238;
+    color: white;
+    border: 0px;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#seemyproject:hover
+{
+    background-color: #5A8BBA;
+}
+
+.downbutton
+{
+    text-align: center;
+    margin: 10px;
+}
+
+#archiveimg
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
