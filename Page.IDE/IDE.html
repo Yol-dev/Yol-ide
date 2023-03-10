@@ -14,28 +14,126 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <!-- Compatibilite avec edge -->
 
-  <title>Yol.Ide</title> 
+  <title>Home</title> 
   <!-- Titre de la page -->
 
-  <link rel="stylesheet" href="IDE1.css"> 
-  <!-- Link Css dans le sources-->
-
-  <script src="IDE.js"></script>
-  <!-- Link Js dans le sources ou ecris ton Js entre >< -->
+  <link rel="stylesheet" href="IDE1.css"> <style></style> 
+  <!-- Link Css dans le sources ou ecris ton Css entre <style></style> -->
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
   <!-- Bibliothèques Pour les icon -->
+
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
   <!-- Le site :https://ionic.io/ionicons -->
 
+  <script src="IDE.js"></script>
+  <!-- Link Js dans le sources ou ecris ton Js entre -->
+  <script src="codemirror/lib/codemirror.js"></script>
+  <link href="codemirror/lib/codemirror.css" rel="stylesheet"/>
+  <script src="codemirror/mode/clike/clike.js"></script>
+  <link href="codemirror/theme/dracula.css" rel="stylesheet"/>
+  <script src="codemirror/addon/hint/show-hint.js"></script>
+  <script src="codemirror/addon/hint/anyword-hint.js"></script>
+  <link href="codemirror/addon/hint/show-hint.css" rel="stylesheet"/>
 </head>
 
-    <body>
+  <body>
+    <div class="parent">
 
-      <h1>Page IDE</h1>
+        <div class="left">
+          <div class="headLeft">
+            <h1 class="headLeftH1">Yol.dev</h1>
+            <ion-icon name="hammer-outline" onclick="BP_color()" class="headLeftIcon"></ion-icon>
+            <div class="Pagecolor" id="color">
+              <div id="colorH1">
+                <h1>Color </h1>
+              </div>
+              <div id="colorBtn">
+                <button id="btn1" class="btnC">1</button>
+                <button id="btn2" class="btnC">2</button>
+                <button id="btn3" class="btnC">3</button>
+                <button id="btn4" class="btnC">4</button>
+                <button id="btn5" class="btnC">5</button>
+                <button id="btn6" class="btnC">6</button>
+                <button id="btn7" class="btnC">7</button>
+                <button id="btn8" class="btnC">8</button>
+              </div>
+            </div>
+            <input id="searchbar" type="text" placeholder="Nom d'un fichier...">
+            <button id="seemyproject">Fichier 1</button>
+            <button id="seemyproject">Fichier 1</button>
+            <button id="seemyproject">Fichier 1</button>
+            <button id="seemyproject">Fichier 1</button>
+            <button id="seemyproject">Fichier 1</button>
+            <button id="seemyproject">Fichier 1</button>
+            <button id="seemyproject">Fichier 1</button>  
+          </div>
+        </div>
+        <div class="right">
+<textarea id="editor" class="text" style="background-color:aliceblue;">
+// EXEMPLE //
 
-      <button onclick="changeStyle()">Changer de style</button>
+int main()
+{
+int leChiffre;
+              
+printf("Entrez une chiffre");
+scanf("%d", &leChiffre);
+    
+printf("Vous avez choisi : ", leChiffre);
+  
+return 0;
+}
+</textarea>
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById('editor'), 
+  {
+      mode: "text/x-c",
+      theme: "dracula",
+      lineNumbers: true,
+      dragDrop: true,
+      tabSize: 4,
+      extraKeys: {"Ctrl-Space": "autocomplete"},
+  });
+  editor.setSize("", "90vh");
+</script>
+          
+        </div>
 
-    </body>
-</html>
+    </div>
 
+    <script>// pour les differents themes
+          function changeStyle(event) {
+        var link = document.getElementsByTagName("link")[0];
+        var target = event.target;
+        var id = target.id;
+        var href;
+
+        switch (id) {
+          case'btn1':href="IDE1.css";break;
+          case'btn2':href="IDE2.css";break;
+          case'btn3':href="IDE3.css";break;
+          case'btn4':href="IDE4.css";break;
+          case'btn5':href="IDE5.css";break;
+          case'btn6':href="IDE6.css";break;
+          case'btn7':href="IDE7.css";break;
+          case'btn8':href="IDE8.css";break;
+          default:href="IDE1.css";
+        }
+
+        document.body.classList.add("fade-out");
+        setTimeout(() => {link.setAttribute("href", href);document.body.classList.remove("fade-out");}, 500);}
+
+      document.getElementById("btn1").addEventListener("click", changeStyle);
+      document.getElementById("btn2").addEventListener("click", changeStyle);
+      document.getElementById("btn3").addEventListener("click", changeStyle);
+      document.getElementById("btn4").addEventListener("click", changeStyle);
+      document.getElementById("btn5").addEventListener("click", changeStyle);
+      document.getElementById("btn6").addEventListener("click", changeStyle);
+      document.getElementById("btn7").addEventListener("click", changeStyle);
+      document.getElementById("btn8").addEventListener("click", changeStyle);
+
+    </script>
+
+  </body>
+</html>    
