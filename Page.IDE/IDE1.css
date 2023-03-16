@@ -36,6 +36,23 @@ grid-row-gap: 0px;
   border-radius: 10px 0px 0px 0px;
   height: 10vh;
 }
+.fileLeft{
+  background-color: #012945;  
+  height: 50vh;
+  margin: 0px 0px 0px 10px;
+  border: none;
+  border-radius: 0px 0px 0px 10px ;
+}
+.fileOpen{
+  background-color: #012945;
+    height: 20vh;
+    margin: 0px 0px 0px 10px;
+}
+.buttonExecuter{
+    background-color: #012945;
+    height: 10vh;
+    margin: 0px 0px 0px 10px;
+}
 
 .headLeftH1{
   color: #c6c6c7; 
@@ -52,14 +69,6 @@ grid-row-gap: 0px;
   font-size: 20px;
   margin: 10px;
   padding-left: 10px;
-}
-
-.fileLeft{
-  background-color: #012945;  
-  height: 50vh;
-  margin: 0px 0px 0px 10px;
-  border: none;
-  border-radius: 0px 0px 0px 10px ;
 }
 
 #files
