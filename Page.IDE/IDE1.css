@@ -15,22 +15,15 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;}
+.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;  background-color: red;}
 .rigth { grid-area: 1 / 2 / 2 / 3;}
-.Pagecolor { display : none ; }
-
-.fade-out {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
+.PageColor { display : none ; }
 
 .headLeftIcon{
   font-size: 29px;
   color: aliceblue;
-}
-
-.Left{
-  height: 50vh;
+  margin-right:0px ;
+  margin-right: 10px;
 }
 
 .headLeft{
@@ -38,10 +31,10 @@ grid-row-gap: 0px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px 0px 10px 10px;
+  margin: 10px 0px 0px 10px;
   background-color: #012945;  
-  border-radius: 10px 0px 0px 10px;
-  height: 90vh;
+  border-radius: 10px 0px 0px 0px;
+  height: 10vh;
 }
 
 .headLeftH1{
@@ -49,26 +42,53 @@ grid-row-gap: 0px;
   margin-left: 10px;
 }
 
-.headLeftIcon{
-  margin-right:0px ;
-  margin-right: 10px;
+#searchbar {
+  background-color: #111d29;
+  color: #6a7179;
+  border: 0px;
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 10px;
+  padding-left: 10px;
 }
 
-#color{
-  position: absolute;
-  top: 0;
-  right: 0;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  background: rgb(39, 37, 37);
-  margin: 20px;
-  padding: 10px;
-  width: 300px;
-  box-shadow:10px 11px 0px 0px rgb(0 0 0 / 71%);
-  z-index: 100000;
+.fileLeft{
+  background-color: #012945;  
+  height: 50vh;
+  margin: 0px 0px 0px 10px;
+  border: none;
+  border-radius: 0px 0px 0px 10px ;
 }
+
+#files
+{
+    background-color: #0b2238;
+    color: white;
+    border: 0px;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#files:hover
+{
+    background-color: #5A8BBA;
+}
+
+.CodeMirror {
+  margin: 10px 10px 10px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+/*------------------------------------Pour la fenetre de choix de color ---------------------------*/
 
 #btn1{
   background: red;
@@ -157,55 +177,23 @@ grid-row-gap: 0px;
   color: #e5e1d5;
 }
 
-#searchbar {
-  background-color: #111d29;
-  color: #6a7179;
-  border: 0px;
-  width: 300px;
-  height: 40px;
-  border-radius: 20px;
-  font-size: 20px;
-  margin: 10px;
-  padding-left: 10px;
-}
-
-textarea{
-  resize: none;
-  height: 90vh;
-  width: 95%;
-  margin: 10px 10px 10px 0px;
-  border-radius:0px 10px 10px 0px;
-}
-
-iframe{
-  display: flex;
+#color{
   position: absolute;
   top: 0;
-  z-index: 10;
+  right: 0;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(39, 37, 37);
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  box-shadow:10px 11px 0px 0px rgb(0 0 0 / 71%);
+  z-index: 100000;
 }
 
-#seemyproject
-{
-    background-color: #0b2238;
-    color: white;
-    border: 0px;
-    width: 300px;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 20px;
-    margin: 5px;
-    transition: .2s;
-    cursor: pointer;
-    text-align: left;
-    padding-left: 20px;
-}
-
-#seemyproject:hover
-{
-    background-color: #5A8BBA;
-}
-
-.CodeMirror {
-  margin: 10px 10px 10px 0px;
-  border-radius: 0px 5px 5px 0px;
+.fade-out {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }

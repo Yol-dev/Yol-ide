@@ -4,28 +4,20 @@
 <!-- Langue par defauts du site -->
 
 <head>
-
   <meta charset="utf-8"> 
   <!-- l'encodage de caractères utilisé du site -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <!-- Pour l adaptativité du site sur mobile -->
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <!-- Compatibilite avec edge -->
-
   <title>Home</title> 
   <!-- Titre de la page -->
-
   <link rel="stylesheet" href="IDE1.css"> <style></style> 
   <!-- Link Css dans le sources ou ecris ton Css entre <style></style> -->
-
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
   <!-- Bibliothèques Pour les icon -->
-
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
   <!-- Le site :https://ionic.io/ionicons -->
-
   <script src="IDE.js"></script>
   <!-- Link Js dans le sources ou ecris ton Js entre -->
   <script src="codemirror/lib/codemirror.js"></script>
@@ -38,13 +30,12 @@
 </head>
 
   <body>
-    <div class="parent">
-
-        <div class="left">
+      <div class="parent">
+        <div class="left" id="left">
           <div class="headLeft">
             <h1 class="headLeftH1">Yol.dev</h1>
             <ion-icon name="hammer-outline" onclick="BP_color()" class="headLeftIcon"></ion-icon>
-            <div class="Pagecolor" id="color">
+            <div class="PageColor" id="color">
               <div id="colorH1">
                 <h1>Color</h1>
               </div>
@@ -59,52 +50,56 @@
                 <button id="btn8" class="btnC">8</button>
               </div>
             </div>
-            <div>            
-                <input id="searchbar" type="text" placeholder="Nom d'un fichier...">
-                  <button id="seemyproject">https://youtu.be/02L994Xth2M</button>
-                  <button id="seemyproject">https://www.youtube.com/watch?v=ZXtWarf3lvg&t=189s</button>
-                  <button id="seemyproject">Fichier 1</button>
-                  <button id="seemyproject">Fichier 1</button>
-                  <button id="seemyproject">Fichier 1</button>
-                  <button id="seemyproject">Fichier 1</button>
-                  <button id="seemyproject">Fichier 1</button>
           </div>
+          <div class="buttonExecuter">
+            <button>Executer</button>
+
+           <img src="" alt=""> <a></a>  </img>
+
+            <button>Partager</button>
+          </div>
+          <div class="fileLeft">            
+            <input id="searchbar" type="text" placeholder="Nom d'un fichier...">
+              <button id="files">https://youtu.be/02L994Xth2M</button>
+              <button id="files">https://www.youtube.com/watch?v=ZXtWarf3lvg&t=189s</button>
+              <button id="files">Fichier 1</button>
+          </div>
+          <div class="tktfratt">
 
           </div>
         </div>
         <div class="right">
-<textarea id="editor" class="text">
-// EXEMPLE //
+            <span class="colorSyntaxe">
+            <textarea id="editor" class="text">
+  // EXEMPLE //
 
-int main()
-{
-int leChiffre;
-              
-printf("Entrez une chiffre");
-scanf("%d", &leChiffre);
-    
-printf("Vous avez choisi : ", leChiffre);
-  
-return 0;
-}
-</textarea>
-<script>
-  var editor = CodeMirror.fromTextArea(document.getElementById('editor'), 
+  int main()
   {
-      mode: "text/x-c",
-      theme: "dracula",
-      lineNumbers: true,
-      dragDrop: true,
-      tabSize: 4,
-      extraKeys: {"Ctrl-Space": "autocomplete"},
-  });
-  editor.setSize("", "90vh");
-</script>
-          
+  int leChiffre;
+                
+  printf("Entrez une chiffre");
+  scanf("%d", &leChiffre);
+      
+  printf("Vous avez choisi : ", leChiffre);
+    
+  return 0;
+  }
+  </textarea>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById('editor'), 
+    {
+        mode: "text/x-c",
+        theme: "dracula",
+        lineNumbers: true,
+        dragDrop: true,
+        tabSize: 4,
+        extraKeys: {"Ctrl-Space": "autocomplete"},
+    });
+    editor.setSize("", "90vh");
+  </script> 
+            </span>
         </div>
-
-    </div>
-
+      </div>
     <script>// pour les differents themes
           function changeStyle(event) {
         var link = document.getElementsByTagName("link")[0];
