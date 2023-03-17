@@ -1,18 +1,42 @@
-body, html {
-  height: 100%;
-  width: 100%;
-}
-
 @media screen and (max-width: 800px) {
-  body {
+  .left {
     display:none;
+  }
+
+  .right {
+    display:none;
+  }
+
+  .erreur404{
+    display: flex;
   }
 }
 
 @media screen and (max-height: 600px) {
-  body {
+  .left {
     display:none;
   }
+
+  .right {
+    display:none;
+  }
+
+  .erreur404{
+    display: flex;
+  }
+}
+
+.erreur404{
+  display: flex;
+  z-index: -12;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
 }
 
 body{
