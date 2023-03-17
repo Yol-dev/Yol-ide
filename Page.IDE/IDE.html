@@ -21,12 +21,19 @@
   <script src="IDE.js"></script>
   <!-- Link Js dans le sources ou ecris ton Js entre -->
   <script src="codemirror/lib/codemirror.js"></script>
+  <!--Librairie code mirror, ne pas suprrimer-->
   <link href="codemirror/lib/codemirror.css" rel="stylesheet"/>
+  <!--Librairie code mirror, ne pas suprrimer-->
   <script src="codemirror/mode/clike/clike.js"></script>
+  <!--Librairie code mirror, ne pas suprrimer-->
   <link href="codemirror/theme/dracula.css" rel="stylesheet"/>
+  <!--Librairie code mirror, ne pas suprrimer-->
   <script src="codemirror/addon/hint/show-hint.js"></script>
+  <!--Librairie code mirror, ne pas suprrimer-->
   <script src="codemirror/addon/hint/anyword-hint.js"></script>
+  <!--Librairie code mirror, ne pas suprrimer-->
   <link href="codemirror/addon/hint/show-hint.css" rel="stylesheet"/>
+  <!--Librairie code mirror, ne pas suprrimer-->
 </head>
 
   <body>
@@ -72,14 +79,14 @@
 
   int main()
   {
-  int leChiffre;
-                
-  printf("Entrez une chiffre");
-  scanf("%d", &leChiffre);
+    int leChiffre;
+                  
+    printf("Entrez une chiffre");
+    scanf("%d", &leChiffre);
+        
+    printf("Vous avez choisi : ", leChiffre);
       
-  printf("Vous avez choisi : ", leChiffre);
-    
-  return 0;
+    return 0;
   }
   </textarea>
   <script>
@@ -95,6 +102,7 @@
     editor.setSize("", "90vh");
   </script> 
             </span>
+            <iframe class="console"></iframe>
         </div>
       </div>
     <script>// pour les differents themes
