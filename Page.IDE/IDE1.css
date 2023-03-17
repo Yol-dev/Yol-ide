@@ -3,6 +3,18 @@ body, html {
   width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    display:none;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body {
+    display:none;
+  }
+}
+
 body{
     margin: 0px;
     padding: 0px;
