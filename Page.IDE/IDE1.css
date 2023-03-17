@@ -1,37 +1,14 @@
 @media screen and (max-width: 800px) {
-  .left {
-    display:none;
-  }
-
-  .right {
-    display:none;
-  }
-
-  .erreur404{
-    display: flex;
+  body{
+    display: none;
   }
 }
 
 @media screen and (max-height: 600px) {
-  .left {
-    display:none;
+  body{
+      display: none;
   }
 
-  .right {
-    display:none;
-  }
-
-  .erreur404{
-    display: flex;
-  }
-}
-
-.erreur404{
-  display: flex;
-  z-index: -12;
-  position: absolute;
-  top: 0;
-  left: 20px;
 }
 
 body, html {
