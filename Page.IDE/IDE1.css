@@ -58,12 +58,12 @@ grid-row-gap: 0px;
   height: 50vh;
   margin: 0px 0px 0px 10px;
   border: none;
-  border-radius: 0px 0px 0px 10px ;
 }
 .fileOpen{
   background-color: #012945;
     height: 20vh;
     margin: 0px 0px 0px 10px;
+    border-radius: 0px 0px 0px 10px ;
 }
 .buttonExecuter{
     background-color: #012945;
@@ -93,7 +93,7 @@ grid-row-gap: 0px;
     background-color: #0b2238;
     color: white;
     border: 0px;
-    width: 300px;
+    width: 250px;
     height: 50px;
     border-radius: 20px;
     font-size: 20px;
@@ -102,6 +102,10 @@ grid-row-gap: 0px;
     cursor: pointer;
     text-align: left;
     padding-left: 20px;
+}
+
+#files :hover {
+  translate: 100px left;
 }
 
 #files:hover
@@ -118,7 +122,9 @@ grid-row-gap: 0px;
   position: absolute;
   z-index: 100;
   bottom: 10vh;
-  left: 50vw;
+  
+  margin-right: auto;
+  margin-left:auto ; 
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
