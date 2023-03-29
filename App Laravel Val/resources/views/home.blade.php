@@ -7,6 +7,6 @@
     <title>Page Home</title>
 </head>
 <body>
-    <h1>Page Hom</h2>
+    <h1>Page Home</h2>
 </body>
 </html>
