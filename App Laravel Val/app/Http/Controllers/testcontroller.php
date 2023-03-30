@@ -15,6 +15,6 @@ class testcontroller extends Controller
 
         $testdb = DB::select('select test2 from test where id = "1"');
 
-        return view('test', compact('test', 'test2', 'testdb'));
+        return view('test')->with('test', $test, 'test2', $test2, 'testdb', $testdb);
     }
 }
