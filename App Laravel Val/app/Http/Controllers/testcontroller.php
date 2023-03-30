@@ -10,6 +10,6 @@ class testcontroller extends Controller
     {
         $test = "je suis la variable test";
 
-        return view('test');
+        return view('test', compact('test'));
     }
 }
