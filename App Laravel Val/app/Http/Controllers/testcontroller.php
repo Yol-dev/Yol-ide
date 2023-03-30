@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\DB;
+use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 
 class testcontroller extends Controller
