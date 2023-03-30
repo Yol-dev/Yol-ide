@@ -8,6 +8,8 @@ class testcontroller extends Controller
 {
     public function index()
     {
+        $test = "je suis la variable test";
+
         return view('test');
     }
 }
