@@ -13,7 +13,7 @@ class testcontroller extends Controller
         $test = "je suis la variable test";
         $test2 = "je suis le second";
 
-        $testdb = DB::select('select test1 from test where test1 = "123456"');
+        $testdb = DB::select('select test2 from test where id = "1"');
 
         return view('test', compact('test', 'test2', 'testdb'));
     }
