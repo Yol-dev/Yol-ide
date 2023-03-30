@@ -20,7 +20,7 @@ body{
   .right { grid-area: 1 / 2 / 2 / 3; height: 50vh; width: 50vw;}
 
 #right{
-  background-image: url(/LoginOrSignUp.IDE/back.png);
+  background-image: url(https://yol-dev.github.io/Yol-ide/LoginOrSignUp.IDE/back.png);
   background-size:contain;
   background-repeat: no-repeat;
   height: 100vh;
