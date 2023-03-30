@@ -121,10 +121,10 @@ grid-row-gap: 0px;
   display: flex;
   position: absolute;
   z-index: 100;
-  bottom: 10vh;
-  
-  margin-right: auto;
-  margin-left:auto ; 
+  bottom: 20vh;
+  height: 200px;
+  width: 600px;
+
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
