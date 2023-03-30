@@ -24,6 +24,12 @@ img{
   width: 100%;
 	height: 100%;
 }
+#right{
+  background-image: url(https://yol-dev.github.io/Yol-ide/LoginOrSignUp.IDE/back.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 #left{
   background-color: blue;
