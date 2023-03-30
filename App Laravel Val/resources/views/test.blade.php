@@ -10,8 +10,6 @@
     <h1>Page Test Database</h1>
     <h2>{{ $test }}</h2>
     <h2>{{ $test2 }}</h2>
-    @foreach ($testdb as $db)
-    <h2>{{ $db }}</h2>  
-    @endforeach
+    <h2>{{ $testdb }}</h2>  
 </body>
 </html>
