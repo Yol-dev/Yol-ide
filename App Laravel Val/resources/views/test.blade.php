@@ -11,7 +11,7 @@
     <h2>{{ $test }}</h2>
     <h2>{{ $test2 }}</h2>
     @foreach ($testdb as $db)
-        <h2>{{ $db['1'] }}</h2>      
+        <h2>{{ $db }}</h2>      
     @endforeach
 </body>
 </html>
