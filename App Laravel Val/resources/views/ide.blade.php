@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page Login</title>
+    <title>Page Ide</title>
 </head>
 <body>
-    <h1>Page Login</h2>
+    <h1>Page Ide</h2>
 </body>
 </html>

@@ -14,7 +14,6 @@ class testcontroller extends Controller
         $test2 = "je suis le second";
 
         $testdb = Test::select('select test1 from test where id = :id', ['id' => 1]);
-        $testdb = 
 
         return view('test', [
             'test' => $test,
