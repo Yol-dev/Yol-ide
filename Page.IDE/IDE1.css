@@ -36,39 +36,47 @@ grid-row-gap: 0px;
 .rigth { grid-area: 1 / 2 / 2 / 3;}
 .PageColor { display : none ; }
 
-.headLeftIcon{
-  font-size: 29px;
-  color: aliceblue;
-  margin-right:0px ;
-  margin-right: 10px;
-}
-
 .headLeft{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px 0px 0px 10px;
-  background-color: #012945;  
+  background-color: #0000008d;  
   border-radius: 10px 0px 0px 0px;
   height: 10vh;
+  width: 20vw;
 }
 .fileLeft{
-  background-color: #012945;  
-  height: 50vh;
+  background-color: #0000008d;  
+  height: 55vh;
   margin: 0px 0px 0px 10px;
   border: none;
+  width: 20vw;
 }
 .fileOpen{
-  background-color: #012945;
-    height: 20vh;
-    margin: 0px 0px 0px 10px;
-    border-radius: 0px 0px 0px 10px ;
+  display: flex;
+  background-color: #0000008d;
+  height: 20vh;
+  margin: 0px 0px 0px 10px;
+  border-radius: 0px 0px 0px 10px ;
+  width: 20vw;
+  align-items: flex-end;
+  justify-content: center;
+
 }
 .buttonExecuter{
-    background-color: #012945;
+    background-color: #0000008d;
     height: 10vh;
     margin: 0px 0px 0px 10px;
+    width: 20vw;
+}
+
+.LeftIcon{
+  font-size: 29px;
+  color: aliceblue;
+  margin-right:0px ;
+  margin-right: 10px;
 }
 
 .headLeftH1{
@@ -104,10 +112,6 @@ grid-row-gap: 0px;
     padding-left: 20px;
 }
 
-#files :hover {
-  translate: 100px left;
-}
-
 #files:hover
 {
     background-color: #5A8BBA;
@@ -124,7 +128,6 @@ grid-row-gap: 0px;
   bottom: 20vh;
   height: 200px;
   width: 600px;
-
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
