@@ -1,3 +1,5 @@
+/****************************Responcive****************************/
+
 @media screen and (max-width: 800px) {
   body{
     display: none;
@@ -10,6 +12,10 @@
   }
 
 }
+
+/****************************Responcive****************************/
+
+/****************************Body et fond d'écran****************************/
 
 body, html {
   height: 100%;
@@ -24,6 +30,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/****************************Body et fond d'écran****************************/
+
+/****************************Grid****************************/
+
 .parent {
 display: grid;
 grid-template-columns: 1fr 4fr;
@@ -36,6 +46,10 @@ grid-row-gap: 0px;
 .rigth { grid-area: 1 / 2 / 2 / 3;}
 .PageColor { display : none ; }
 
+/****************************Grid****************************/
+
+/****************************Sous Partie****************************/
+
 .headLeft{
   display: flex;
   align-items: center;
@@ -47,14 +61,59 @@ grid-row-gap: 0px;
   height: 10vh;
   width: 20vw;
 }
+.leftShare{
+    background-color: #0000008d;
+    height: 10vh;
+    margin: 0px 0px 0px 10px;
+    width: 20vw;
+}
+
+.leftShare2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSearch{
+  background-color: #0000008d;  
+  height: 10vh;
+  margin: 0px 0px 0px 10px;
+  width: 20vw;
+}
+
+.leftSearch2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .fileLeft{
   background-color: #0000008d;  
-  height: 55vh;
+  height: 45vh;
   margin: 0px 0px 0px 10px;
   border: none;
   width: 20vw;
+  overflow-y: scroll;
 }
-.fileOpen{
+
+.fileLeft::-webkit-scrollbar {
+  width: 8px;
+}
+
+.fileLeft::-webkit-scrollbar-track {
+  background-color: none;  
+}
+
+.fileLeft::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #036C8D;
+}
+
+.fileLeft::-webkit-scrollbar-thumb:hover {
+  background-color: #b50713;
+}
+
+.fileBottom{
   display: flex;
   background-color: #0000008d;
   height: 20vh;
@@ -63,14 +122,9 @@ grid-row-gap: 0px;
   width: 20vw;
   align-items: flex-end;
   justify-content: center;
+}
 
-}
-.buttonExecuter{
-    background-color: #0000008d;
-    height: 10vh;
-    margin: 0px 0px 0px 10px;
-    width: 20vw;
-}
+/****************************Sous Partie****************************/
 
 .LeftIcon{
   font-size: 29px;
@@ -88,11 +142,11 @@ grid-row-gap: 0px;
   background-color: #111d29;
   color: #6a7179;
   border: 0px;
-  width: 300px;
+  width: 80%;
   height: 40px;
   border-radius: 20px;
   font-size: 20px;
-  margin: 10px;
+  margin: 5px;
   padding-left: 10px;
 }
 
@@ -101,7 +155,7 @@ grid-row-gap: 0px;
     background-color: #0b2238;
     color: white;
     border: 0px;
-    width: 250px;
+    width: 80%;
     height: 50px;
     border-radius: 20px;
     font-size: 20px;
@@ -128,6 +182,22 @@ grid-row-gap: 0px;
   bottom: 20vh;
   height: 200px;
   width: 600px;
+}
+
+.leftExecut{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  isolation: isolate;
+  background: #1B1B1B;
+border: 3px solid rgba(0, 86, 164, 0.61);
+border-radius: 32px;
+color: aliceblue;
+font-size: 24px;
+}
+
+#iconGo{
+  margin-left:10px ;
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/

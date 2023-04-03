@@ -42,17 +42,29 @@
             <h1 class="headLeftH1">Yol.dev</h1>
             <ion-icon name="apps-outline" class="LeftIcon" ></ion-icon>
           </div>
-          <div class="buttonExecuter">
-            <button>Executer</button>
-            <button>Partager</button>
+          <div class="leftShare">
+            <div class="leftShare2">
+              <ion-icon name="globe-outline"></ion-icon>
+              <button class="leftExecut">Executer <ion-icon name="caret-forward-circle-outline" id="iconGo"></ion-icon></button>
+            </div>
           </div>
-          <div class="fileLeft">            
-            <input id="searchbar" type="text" placeholder="Nom d'un fichier...">
+          <div class="leftSearch">
+            <div class="leftSearch2">
+              <input id="searchbar" type="text" placeholder="Nom d'un fichier..."> </input>
+              <ion-icon name="add-outline" class="LeftIcon"></ion-icon>
+            </div>
+          </div>
+          <div class="fileLeft">  
               <button id="files">55</button>
               <button id="files">66</button>
               <button id="files" >Fichier 1</button>
+              <button id="files" >Fichier 1</button>
+              <button id="files" >Fichier 1</button>
+              <button id="files" >Fichier 1</button>
+              <button id="files" >Fichier 1</button>
+              <button id="files" >Fichier 1</button>
           </div>
-          <div class="fileOpen">
+          <div class="fileBottom">
             <ion-icon name="hammer-outline" onclick="BP_color()" class="LeftIcon"></ion-icon>
             <div class="PageColor" id="color">
               <div id="colorH1">
@@ -141,52 +153,12 @@
   </body>
 </html>
 
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Exemple de bouton pour la suppression de contenu de la div2 et la restauration avec une transition</title>
-    <style>
-      #div2 {
-        transition: opacity 0.5s ease-in-out; /* Ajout d'une transition de 0,5 seconde pour la propriété d'opacité */
-      }
-    </style>
-  </head>
-  <body>
-    <div id="div1">
-      <button onclick="supprimerContenu()">Supprimer le contenu de la div2</button>
-    </div>
-    <div id="div2">
-      <p>Contenu de la div2 que nous souhaitons supprimer.</p>
-      <p>Plus de contenu de la div2 que nous souhaitons supprimer.</p>
-    </div>
-    
-    <script>
-      var contenuSupprime = false;
-      var div2 = document.getElementById("div2");
-      var contenuOriginal = div2.innerHTML; // Sauvegarde du contenu d'origine de la div2
-      
-      function supprimerContenu() {
-        if (!contenuSupprime) {
-          div2.style.opacity = 0; // Applique une opacité de 0 pour supprimer le contenu de la div2
-          contenuSupprime = true;
-        } else {
-          div2.innerHTML = contenuOriginal;
-          div2.style.opacity = 1; // Applique une opacité de 1 pour restaurer le contenu d'origine de la div2
-          contenuSupprime = false;
-        }
-      }
-    </script>
-  </body>
-</html>
--->
-
 <!--https://www.youtube.com/watch?v=ZXtWarf3lvg&t=189s-->
 
 <!--https://www.youtube.com/watch?v=02L994Xth2M-->
 
 <!--
-___________________________________________________________________________________________________________________
+  ___________________________________________________________________________________________________________________
 |                                                                                                                  |
 |  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,((((,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  |
 |  ,@@@@@@@,,,,,,,@@@@@@#,,,,,,,,,,,,,,,,,,&@@@@@,,,,,,,,,,,,,,,,,,,,,,,,,,,&@@@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  |
@@ -201,5 +173,4 @@ ________________________________________________________________________________
 |  ,,,,,,,,/@@@@@,,,,,,,,,,,#@@@@@@(,,,,,,,/@@@@(,,,,*@@@,,,,,,,,%@@@@(,,#@@,,,,,,,,#@@@@@(,,,,,,,,,,@@@,,,,,,,,,  |
 |                                                                                                                  |
 |__________________________________________________________________________________________________________________|
-
 -->
