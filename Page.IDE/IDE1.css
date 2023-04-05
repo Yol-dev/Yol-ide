@@ -25,7 +25,7 @@ body, html {
 body{
     margin: 0px;
     padding: 0px;
-    background: no-repeat linear-gradient(72.05deg, #00386B -4.63%, #036C8D 105.11%);
+    background: #00386B;
     transition: all 0.3s;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -126,8 +126,13 @@ grid-row-gap: 0px;
 
 /****************************Sous Partie****************************/
 
+#leftSearchIcon{
+  background-color: #111d29;
+  border-radius: 20px;
+}
+
 .LeftIcon{
-  font-size: 29px;
+  font-size: 35px;
   color: aliceblue;
   margin-right:0px ;
   margin-right: 10px;
@@ -187,7 +192,7 @@ grid-row-gap: 0px;
 .leftExecut{
   display: flex;
   align-items: center;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 10px 10px 10px;
   isolation: isolate;
   background: #1B1B1B;
 border: 3px solid rgba(0, 86, 164, 0.61);
@@ -197,7 +202,15 @@ font-size: 24px;
 }
 
 #iconGo{
-  margin-left:10px ;
+  margin-left:20px ;
+}
+
+#leftShareIcon{
+  font-size: 35px;
+  color: aliceblue;
+  margin-right: 10px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
