@@ -13,6 +13,13 @@
 
 }
 
+@media screen and (max-width: 1000px) {
+  #leftSharePartage{
+      display: none;
+  }
+
+}
+
 /****************************Responcive****************************/
 
 /****************************Body et fond d'écran****************************/
@@ -72,6 +79,7 @@ grid-row-gap: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 
 .leftSearch{
@@ -195,17 +203,17 @@ grid-row-gap: 0px;
   padding: 10px 10px 10px 10px;
   isolation: isolate;
   background: #1B1B1B;
-border: 3px solid rgba(0, 86, 164, 0.61);
-border-radius: 32px;
-color: aliceblue;
-font-size: 24px;
+  border: 3px solid rgba(0, 86, 164, 0.61);
+  border-radius: 32px;
+  color: aliceblue;
+  font-size: 24px;
 }
 
 #iconGo{
   margin-left:20px ;
 }
 
-#leftShareIcon{
+#leftSharePartage{
   font-size: 35px;
   color: aliceblue;
   margin-right: 10px;

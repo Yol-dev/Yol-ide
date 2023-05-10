@@ -1,7 +1,14 @@
+@media screen and (max-width: 800px) {
+  #right{
+    display: none;
+  }
+  #left {grid-area:1/1/2/3;height:50vh;width:50vw;display:flex;}
+}
+
 body{
   margin: 0px;
   padding: 0px;
-  background: rgb(209, 142, 18);
+  background: grey;
   transition: all 0.3s;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
@@ -29,7 +36,7 @@ img{
 }
 
 #left{
-  background-color: blue;
+  background-color: transparent;
   margin: auto;
 }
 
@@ -57,6 +64,7 @@ form{
   display: flex;
   position: absolute;
   z-index: 5;
+  top: 60%;
 }
 
 h1{
