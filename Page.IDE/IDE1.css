@@ -19,7 +19,6 @@
   }
 
 }
-
 /****************************Responcive****************************/
 
 /****************************Body et fond d'écran****************************/
@@ -32,7 +31,7 @@ body, html {
 body{
     margin: 0px;
     padding: 0px;
-    background: #00386B;
+    background: #A61E39;
     transition: all 0.3s;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,7 +48,7 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;  background-color: red;}
+.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;}
 .rigth { grid-area: 1 / 2 / 2 / 3;}
 .PageColor { display : none ; }
 
@@ -77,9 +76,9 @@ grid-row-gap: 0px;
 
 .leftShare2{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 10px;
+  margin: 0px 10px 0px 5px;
 }
 
 .leftSearch{
@@ -96,8 +95,9 @@ grid-row-gap: 0px;
 }
 
 .fileLeft{
+  
   background-color: #0000008d;  
-  height: 45vh;
+  height: 55vh;
   margin: 0px 0px 0px 10px;
   border: none;
   width: 20vw;
@@ -114,28 +114,28 @@ grid-row-gap: 0px;
 
 .fileLeft::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: #036C8D;
+  background-color: #b50713;
 }
 
 .fileLeft::-webkit-scrollbar-thumb:hover {
-  background-color: #b50713;
+  background-color: #A61E39;
 }
 
 .fileBottom{
   display: flex;
   background-color: #0000008d;
-  height: 20vh;
+  height: 10vh;
   margin: 0px 0px 0px 10px;
-  border-radius: 0px 0px 0px 10px ;
+  border-radius: 0px 0px 0px 10px;
   width: 20vw;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /****************************Sous Partie****************************/
 
 #leftSearchIcon{
-  background-color: #111d29;
+  background-color: #800000;
   border-radius: 20px;
 }
 
@@ -152,7 +152,7 @@ grid-row-gap: 0px;
 }
 
 #searchbar {
-  background-color: #111d29;
+  background-color: #800000;
   color: #6a7179;
   border: 0px;
   width: 80%;
@@ -165,7 +165,7 @@ grid-row-gap: 0px;
 
 #files
 {
-    background-color: #0b2238;
+    background-color: #800000;
     color: white;
     border: 0px;
     width: 80%;
@@ -176,12 +176,13 @@ grid-row-gap: 0px;
     transition: .2s;
     cursor: pointer;
     text-align: left;
-    padding-left: 20px;
+    
+    text-align: center;
 }
 
 #files:hover
 {
-    background-color: #5A8BBA;
+    background-color: #6e0b14;
 }
 
 .CodeMirror {
@@ -203,7 +204,7 @@ grid-row-gap: 0px;
   padding: 10px 10px 10px 10px;
   isolation: isolate;
   background: #1B1B1B;
-  border: 3px solid rgba(0, 86, 164, 0.61);
+  border: 3px solid #730d0d;
   border-radius: 32px;
   color: aliceblue;
   font-size: 24px;
@@ -217,7 +218,6 @@ grid-row-gap: 0px;
   font-size: 35px;
   color: aliceblue;
   margin-right: 10px;
-  background-color: red;
   border-radius: 50%;
 }
 
@@ -332,3 +332,6 @@ grid-row-gap: 0px;
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
+
+
+/*------------------------------------Faire des variable pour la prochaine fois !!!!!!---------------------------*/

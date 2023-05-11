@@ -1,11 +1,45 @@
-body{
-  margin: 0px;
-  padding: 0px;
-  background: linear-gradient(72.05deg, #00386B -4.63%, #036C8D 105.11%);
-  transition: all 0.3s;
-  height: 500vh;
-  font-family: Arial, Helvetica, sans-serif;
+/****************************Responcive****************************/
+
+@media screen and (max-width: 800px) {
+  body{
+    display: none;
+  }
 }
+
+@media screen and (max-height: 600px) {
+  body{
+      display: none;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #leftSharePartage{
+      display: none;
+  }
+
+}
+
+/****************************Responcive****************************/
+
+/****************************Body et fond d'écran****************************/
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #00386B;
+    transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/****************************Body et fond d'écran****************************/
+
+/****************************Grid****************************/
 
 .parent {
 display: grid;
@@ -15,185 +49,287 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;  background-color: red;}
+.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;}
 .rigth { grid-area: 1 / 2 / 2 / 3;}
 .PageColor { display : none ; }
 
-.headLeftIcon{
-font-size: 29px;
-color: aliceblue;
-margin-right:0px ;
-margin-right: 10px;
-}
+/****************************Grid****************************/
+
+/****************************Sous Partie****************************/
 
 .headLeft{
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-justify-content: space-between;
-margin: 10px 0px 0px 10px;
-background-color: #012945;  
-border-radius: 10px 0px 0px 0px;
-height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0px 0px 10px;
+  background-color: #0000008d;  
+  border-radius: 10px 0px 0px 0px;
+  height: 10vh;
+  width: 20vw;
+}
+.leftShare{
+    background-color: #0000008d;
+    height: 10vh;
+    margin: 0px 0px 0px 10px;
+    width: 20vw;
 }
 
-.headLeftH1{
-color: #c6c6c7; 
-margin-left: 10px;
+.leftShare2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px 0px 5px;
 }
 
-#searchbar {
-background-color: #111d29;
-color: #6a7179;
-border: 0px;
-width: 300px;
-height: 40px;
-border-radius: 20px;
-font-size: 20px;
-margin: 10px;
-padding-left: 10px;
+.leftSearch{
+  background-color: #0000008d;  
+  height: 10vh;
+  margin: 0px 0px 0px 10px;
+  width: 20vw;
+}
+
+.leftSearch2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fileLeft{
-background-color: #012945;  
-height: 50vh;
-margin: 0px 0px 0px 10px;
-border: none;
-border-radius: 0px 0px 0px 10px ;
+  
+  background-color: #0000008d;  
+  height: 55vh;
+  margin: 0px 0px 0px 10px;
+  border: none;
+  width: 20vw;
+  overflow-y: scroll;
+}
+
+.fileLeft::-webkit-scrollbar {
+  width: 8px;
+}
+
+.fileLeft::-webkit-scrollbar-track {
+  background-color: none;  
+}
+
+.fileLeft::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #036C8D;
+}
+
+.fileLeft::-webkit-scrollbar-thumb:hover {
+  background-color: #b50713;
+}
+
+.fileBottom{
+  display: flex;
+  background-color: #0000008d;
+  height: 10vh;
+  margin: 0px 0px 0px 10px;
+  border-radius: 0px 0px 0px 10px;
+  width: 20vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/****************************Sous Partie****************************/
+
+#leftSearchIcon{
+  background-color: #111d29;
+  border-radius: 20px;
+}
+
+.LeftIcon{
+  font-size: 35px;
+  color: aliceblue;
+  margin-right:0px ;
+  margin-right: 10px;
+}
+
+.headLeftH1{
+  color: #c6c6c7; 
+  margin-left: 10px;
+}
+
+#searchbar {
+  background-color: #111d29;
+  color: #6a7179;
+  border: 0px;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 5px;
+  padding-left: 10px;
 }
 
 #files
 {
-  background-color: #0b2238;
-  color: white;
-  border: 0px;
-  width: 300px;
-  height: 50px;
-  border-radius: 20px;
-  font-size: 20px;
-  margin: 5px;
-  transition: .2s;
-  cursor: pointer;
-  text-align: left;
-  padding-left: 20px;
+    background-color: #0b2238;
+    color: white;
+    border: 0px;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
 }
 
 #files:hover
 {
-  background-color: #5A8BBA;
+    background-color: #5A8BBA;
 }
 
 .CodeMirror {
-margin: 10px 10px 10px 0px;
-border-radius: 0px 5px 5px 0px;
+  margin: 10px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+.console{
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  bottom: 20vh;
+  height: 200px;
+  width: 600px;
+}
+
+.leftExecut{
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  isolation: isolate;
+  background: #1B1B1B;
+  border: 3px solid rgba(0, 86, 164, 0.61);
+  border-radius: 32px;
+  color: aliceblue;
+  font-size: 24px;
+}
+
+#iconGo{
+  margin-left:20px ;
+}
+
+#leftSharePartage{
+  font-size: 35px;
+  color: aliceblue;
+  margin-right: 10px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
 
 #btn1{
-background: red;
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn2{
-background: rgb(0, 0, 255);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(0, 0, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn3{
-background: rgb(242, 255, 0);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(242, 255, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn4{
-background: rgb(255, 140, 0);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(255, 140, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn5{
-background: rgb(30, 255, 0);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(30, 255, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn6{
-background: rgb(255, 0, 234);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(255, 0, 234);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn7{
-background: rgb(114, 8, 200);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(114, 8, 200);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #btn8{
-background: rgb(255, 255, 255);
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: none;
-margin: 10px;
-box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+  background: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
 }
 
 #colorH1{
-font-family: Arial, Helvetica, sans-serif;
-display: flex;
-justify-content: center;
-color: #e5e1d5;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #e5e1d5;
 }
 
 #color{
-position: absolute;
-top: 0;
-right: 0;
-align-content: center;
-flex-wrap: wrap;
-justify-content: center;
-flex-direction: column;
-background: rgb(39, 37, 37);
-margin: 20px;
-padding: 10px;
-width: 300px;
-box-shadow:10px 11px 0px 0px rgb(0 0 0 / 71%);
-z-index: 100000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(39, 37, 37);
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  box-shadow:10px 11px 0px 0px rgb(0 0 0 / 71%);
+  z-index: 100000;
 }
 
 .fade-out {
-transition: opacity 0.5s ease-in-out;
-opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
+
+/*------------------------------------Pour la fenetre de choix de color ---------------------------*/
