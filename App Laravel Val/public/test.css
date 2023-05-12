@@ -1,0 +1,241 @@
+@media screen and (max-width: 800px) {
+  body{
+    display: none;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body{
+      display: none;
+  }
+
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: no-repeat linear-gradient(72.05deg, #00386B -4.63%, #036C8D 105.11%);
+    transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.Left { grid-area: 1 / 1 / 2 / 2; margin: 20px 0px 0px 20px;  background-color: red;}
+.rigth { grid-area: 1 / 2 / 2 / 3;}
+.PageColor { display : none ; }
+
+.headLeft{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0px 0px 10px;
+  background-color: #0000008d;  
+  border-radius: 10px 0px 0px 0px;
+  height: 10vh;
+  width: 20vw;
+}
+.fileLeft{
+  background-color: #0000008d;  
+  height: 55vh;
+  margin: 0px 0px 0px 10px;
+  border: none;
+  width: 20vw;
+}
+.fileOpen{
+  display: flex;
+  background-color: #0000008d;
+  height: 20vh;
+  margin: 0px 0px 0px 10px;
+  border-radius: 0px 0px 0px 10px ;
+  width: 20vw;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+.buttonExecuter{
+    background-color: #0000008d;
+    height: 10vh;
+    margin: 0px 0px 0px 10px;
+    width: 20vw;
+}
+
+.LeftIcon{
+  font-size: 29px;
+  color: aliceblue;
+  margin-right:0px ;
+  margin-right: 10px;
+}
+
+.headLeftH1{
+  color: #c6c6c7; 
+  margin-left: 10px;
+}
+
+#searchbar {
+  background-color: #111d29;
+  color: #6a7179;
+  border: 0px;
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+#files
+{
+    background-color: #0b2238;
+    color: white;
+    border: 0px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#files:hover
+{
+    background-color: #5A8BBA;
+}
+
+.CodeMirror {
+  margin: 10px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+.console{
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  bottom: 20vh;
+  height: 200px;
+  width: 600px;
+}
+
+/*------------------------------------Pour la fenetre de choix de color ---------------------------*/
+
+#btn1{
+  background: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn2{
+  background: rgb(0, 0, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn3{
+  background: rgb(242, 255, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn4{
+  background: rgb(255, 140, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn5{
+  background: rgb(30, 255, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn6{
+  background: rgb(255, 0, 234);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn7{
+  background: rgb(114, 8, 200);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#btn8{
+  background: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  box-shadow: inset -6px 6px 1px rgb(0 0 0 / 25%);
+}
+
+#colorH1{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #e5e1d5;
+}
+
+#color{
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(39, 37, 37);
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  box-shadow:10px 11px 0px 0px rgb(0 0 0 / 71%);
+  z-index: 100000;
+}
+
+.fade-out {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}

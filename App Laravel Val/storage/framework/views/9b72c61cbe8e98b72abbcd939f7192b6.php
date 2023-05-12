@@ -1,0 +1,1 @@
+<h1>Page Gestion de Fichier</h1><?php /**PATH /home/valentin/Yol-ide/App Laravel Val/resources/views/managefile.blade.php ENDPATH**/ ?>

@@ -1,0 +1,16 @@
+[
+{
+  "name":"Batterie",
+  "value_x":"['10h00', '10h30', '11h00', '11h30', '12h00', '12h30']",
+  "value_y":[0,10,20,30,40,50],
+  "data":[100,75,40,35,20,0],
+  "unity":"%"
+},
+{
+  "name":"Pression",
+  "value_x":"['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin']",
+  "value_y":[0,20,40,60,80,100],
+  "data":[0,5,20,10,40,50],
+  "unity":"J"
+}
+]
