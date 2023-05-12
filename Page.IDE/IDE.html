@@ -58,14 +58,6 @@
               <button id="files">Fichier 1</button>
               <button id="files">Fichier 2</button>
               <button id="files">Fichier 3</button>
-              <button id="files">Fichier 4</button>
-              <button id="files">Fichier 5</button>
-              <button id="files">Fichier 6</button> 
-              <button id="files">Fichier 7</button> 
-              <button id="files">Fichier 8</button> 
-              <button id="files">Fichier 9</button> 
-              <button id="files">Fichier 10</button> 
-
           </div>
           <div class="fileBottom">
             <ion-icon name="hammer-outline" onclick="BP_color()" class="LeftIcon"></ion-icon>
@@ -90,7 +82,6 @@
         </div>
         <div class="right">
             <span class="colorSyntaxe">
-              <form>
             <textarea id="editor" class="text">
   // EXEMPLE //
 
@@ -116,7 +107,7 @@
         tabSize: 4,
         extraKeys: {"Ctrl-Space": "autocomplete"},
     });
-    editor.setSize("", "95vh");
+    editor.setSize("", "70vh");
   </script> 
             </span>
             <iframe class="console" src="http://5.196.8.161:8888/"></iframe>
@@ -154,7 +145,78 @@
       document.getElementById("btn8").addEventListener("click", changeStyle);
 
     </script>
-                  </form>
+    	<div class="clik">  
+        <button class="clickS">sup</button>
+        <button class="clickS">renommer</button>
+    </div>
+    <style>  
+      /* Style pour le contenu du clic droit */
+      .clik {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 9999;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+  
+      /* Style pour les boutons du clic droit */
+      .clickS {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: black;
+        background-color: #f2f2f2;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+      }
+  
+      /* Style pour le survol des boutons du clic droit */
+      .clickS:hover {
+        background-color: #ddd;
+      }
+    </style>
+    <script>
+// Désactiver le clic droit sur la page entière
+document.addEventListener('contextmenu', event => {
+			if (!event.target.closest('.fileLeft')) {
+				event.preventDefault();
+			}
+		});
+
+		// Afficher le contenu du clic droit lorsque l'utilisateur clique sur un bouton
+		document.querySelectorAll('.fileLeft button').forEach(button => {
+			button.addEventListener('contextmenu', event => {
+				event.preventDefault();
+
+				// Afficher le contenu du clic droit
+				const clik = document.querySelector('.clik');
+				clik.style.display = 'block';
+
+				// Positionner le contenu du clic droit à l'endroit du clic
+				clik.style.top = event.pageY + 'px';
+				clik.style.left = event.pageX + 'px';
+
+				// Masquer le contenu du clic droit lorsque l'utilisateur clique en dehors
+				document.addEventListener('mousedown', hideClik);
+				document.addEventListener('keydown', hideClik);
+
+				function hideClik(event) {
+					if (event.button !== 2) {
+						clik.style.display = 'none';
+						document.removeEventListener('mousedown', hideClik);
+						document.removeEventListener('keydown', hideClik);
+					}
+				}
+			});
+		});
+    </script>
   </body>
 </html>
 
@@ -176,4 +238,70 @@
 |  ,,,,,,,,/@@@@@,,,,,,,,,,,#@@@@@@(,,,,,,,/@@@@(,,,,*@@@,,,,,,,,%@@@@(,,#@@,,,,,,,,#@@@@@(,,,,,,,,,,@@@,,,,,,,,,  |
 |                                                                                                                  |
 |__________________________________________________________________________________________________________________|
+-->
+
+<!--
+
+<body>
+  <button id="files">Fichier 1</button>
+  <div id="custom-menu" class="custom-menu">
+    <div id="menu-option-1" class="menu-option">Option 1</div>
+    <div id="menu-option-2" class="menu-option">Option 2</div>
+  </div>
+  <div id="content" class="content">
+    <p>Contenu de la page</p>
+  </div>
+</body>
+
+.custom-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  min-width: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  background-color: #f5f5f5;
+}
+
+var filesButton = document.getElementById("files");
+var customMenu = document.getElementById("custom-menu");
+
+// Activer le clic droit sur le bouton "Fichier 1"
+filesButton.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+  // Afficher le menu personnalisé
+  customMenu.style.display = "block";
+  customMenu.style.left = e.pageX + "px";
+  customMenu.style.top = e.pageY + "px";
+
+  // Désactiver le clic droit par défaut sur le bouton "Fichier 1"
+  filesButton.addEventListener("mousedown", disableContextMenu);
+});
+
+// Cacher le menu personnalisé lorsque l'utilisateur clique en dehors de celui-ci
+document.addEventListener("click", function(e) {
+  if (!customMenu.contains(e.target)) {
+    customMenu.style.display = "none";
+    // Réactiver le clic droit par défaut pour le reste de la page
+    filesButton.removeEventListener("mousedown", disableContextMenu);
+  }
+});
+
+// Fonction pour désactiver le clic droit
+function disableContextMenu(e) {
+  if (e.button === 2) {
+    e.preventDefault();
+  }
+}
+
+
 -->

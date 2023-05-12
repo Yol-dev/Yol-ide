@@ -6,7 +6,7 @@
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 550px) {
   body{
       display: none;
   }
@@ -176,7 +176,6 @@ grid-row-gap: 0px;
     transition: .2s;
     cursor: pointer;
     text-align: left;
-    
     text-align: center;
 }
 
@@ -186,16 +185,17 @@ grid-row-gap: 0px;
 }
 
 .CodeMirror {
-  margin: 10px 10px 10px 0px;
-  border-radius: 0px 10px 10px 0px;
+  margin: 10px 10px 0px 0px;
+  border-radius: 0px 10px 0px 0px;
 }
 .console{
-  display: flex;
-  position: absolute;
-  z-index: 100;
-  bottom: 20vh;
-  height: 200px;
-  width: 600px;
+
+ height: 25vh;
+ width: 99%;
+ margin:0px;
+ padding: 0px;
+ border: 0px;
+ border-radius: 0px 0px 10px 0px;
 }
 
 .leftExecut{
@@ -332,6 +332,12 @@ grid-row-gap: 0px;
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
+
+/*------------------------------------Click droit---------------------------*/
+
+
+
+/*------------------------------------Click droit---------------------------*/
 
 
 /*------------------------------------Faire des variable pour la prochaine fois !!!!!!---------------------------*/
