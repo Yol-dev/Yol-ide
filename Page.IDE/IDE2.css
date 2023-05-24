@@ -6,7 +6,7 @@
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 550px) {
   body{
       display: none;
   }
@@ -19,7 +19,6 @@
   }
 
 }
-
 /****************************Responcive****************************/
 
 /****************************Body et fond d'écran****************************/
@@ -115,11 +114,11 @@ grid-row-gap: 0px;
 
 .fileLeft::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: #036C8D;
+  background-color: #00386B;
 }
 
 .fileLeft::-webkit-scrollbar-thumb:hover {
-  background-color: #b50713;
+  background-color: #A61E39;
 }
 
 .fileBottom{
@@ -136,7 +135,7 @@ grid-row-gap: 0px;
 /****************************Sous Partie****************************/
 
 #leftSearchIcon{
-  background-color: #111d29;
+  background-color: #00386B;
   border-radius: 20px;
 }
 
@@ -153,7 +152,7 @@ grid-row-gap: 0px;
 }
 
 #searchbar {
-  background-color: #111d29;
+  background-color: #00386B;
   color: #6a7179;
   border: 0px;
   width: 80%;
@@ -166,7 +165,7 @@ grid-row-gap: 0px;
 
 #files
 {
-    background-color: #0b2238;
+    background-color: #00386B;
     color: white;
     border: 0px;
     width: 80%;
@@ -177,25 +176,26 @@ grid-row-gap: 0px;
     transition: .2s;
     cursor: pointer;
     text-align: left;
-    padding-left: 20px;
+    text-align: center;
 }
 
 #files:hover
 {
-    background-color: #5A8BBA;
+    background-color: #00646b;
 }
 
 .CodeMirror {
-  margin: 10px 10px 10px 0px;
-  border-radius: 0px 10px 10px 0px;
+  margin: 10px 10px 0px 0px;
+  border-radius: 0px 10px 0px 0px;
 }
 .console{
-  display: flex;
-  position: absolute;
-  z-index: 100;
-  bottom: 20vh;
-  height: 200px;
-  width: 600px;
+
+ height: 25vh;
+ width: 99%;
+ margin:0px;
+ padding: 0px;
+ border: 0px;
+ border-radius: 0px 0px 10px 0px;
 }
 
 .leftExecut{
@@ -204,7 +204,7 @@ grid-row-gap: 0px;
   padding: 10px 10px 10px 10px;
   isolation: isolate;
   background: #1B1B1B;
-  border: 3px solid rgba(0, 86, 164, 0.61);
+  border: 3px solid #00386B;
   border-radius: 32px;
   color: aliceblue;
   font-size: 24px;
@@ -218,7 +218,6 @@ grid-row-gap: 0px;
   font-size: 35px;
   color: aliceblue;
   margin-right: 10px;
-  background-color: red;
   border-radius: 50%;
 }
 
@@ -333,3 +332,12 @@ grid-row-gap: 0px;
 }
 
 /*------------------------------------Pour la fenetre de choix de color ---------------------------*/
+
+/*------------------------------------Click droit---------------------------*/
+
+
+
+/*------------------------------------Click droit---------------------------*/
+
+
+/*------------------------------------Faire des variable pour la prochaine fois !!!!!!---------------------------*/

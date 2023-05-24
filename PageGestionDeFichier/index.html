@@ -1,38 +1,112 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<!-- Pour dire c est du htlm au navigateur -->
+<html lang="fr"> 
+<!-- Langue par defauts du site -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Gestion Fichier Alpha</title>
+  <meta charset="utf-8"> 
+    <!-- l'encodage de caractères utilisé du site -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Pour l adaptativité du site sur mobile -->
+          <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+            <!-- Compatibilite avec edge -->
+              <title>PageGestionDeFichier</title> 
+                <!-- Titre de la page -->
+                  <link rel="stylesheet" href="style.css"> <style></style> 
+                    <!-- Link Css dans le sources ou ecris ton Css entre <style></style> -->
+                      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+                        <!-- Bibliothèques Pour les icon -->
+                          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+                            <!-- Le site :https://ionic.io/ionicons -->
+                              <script src="#"></script>
 </head>
-<body>
-    <div class="parent">
-        <div class="left">
-            <img id="yoldev" src="assets/Yoldev.svg">
-            <div class="createbox">
-                <input id="searchbar" type="text" placeholder="Nom d'un fichier...">
-                <button id="seemyproject">Fichier 1</button>
-                <button id="seemyproject">Fichier 2</button>
-                <button id="seemyproject">Fichier 3</button>
-            </div>
-            <div class="downbutton">
-                <img id="archiveimg" src="assets/Archive.svg">
-                <img id="archiveimg" src="assets/Theme.svg">
-                <img id="archiveimg" src="assets/Params.svg">
-            </div>
-        </div>
-        <div class="right">
-            <h1 id="myfiletext">Mes fichiers</h1>
-            <div class="filesbox">
-                <div class="filestop">
-                    <div class="files">
-                        <h1 id="fichier">index.html</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-</body>
+   <body>
+    <div id="background"></div>
+    <header class="headerFiles">
+      <h1 class="titleFiles"> Mes Fichiers </h1>
+      <input type="text" placeholder="Cherche...">
+      <button class="addFiles"> Nouveau </button>
+    </header>
+    <nav class="header">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" > nom </th>
+            <th scope="col"> titre </th>
+            <th scope="col"> poids </th>
+            <th scope="col"> date </th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!--__________________TEMPLATE__________________-->
+
+          <!--
+            
+        <tr>
+          <td> <i lang="fr"> ***nom*** </i> </td>
+          <td> <i lang="fr"> ***titre*** </i> </td>
+          <td> <i lang="fr"> ***poids*** </i> </td>
+          <td> <i lang="fr"> ***date*** </i> </td>
+        </tr>
+          -->
+
+          <!--__________________TEMPLATE__________________-->
+            
+          <tr>
+            <td> <i lang="fr"> Kerian </i> </td>
+            <td> <i lang="fr"> 1 Fichier </i> </td>
+            <td> <i lang="fr"> 904ko </i> </td>
+            <td> <i lang="fr"> 22/05/2023 </i> </td>
+          </tr>            
+          <tr>
+            <td> <i lang="fr"> Kerian </i> </td>
+            <td> <i lang="fr"> 2 Fichier </i> </td>
+            <td> <i lang="fr"> 58 ko </i> </td>
+            <td> <i lang="fr"> 22/05/2023 </i> </td>
+          </tr>               
+          <tr>
+            <td> <i lang="fr"> Kerian </i> </td>
+            <td> <i lang="fr"> 2 Fichier </i> </td>
+            <td> <i lang="fr"> 243 ko </i> </td>
+            <td> <i lang="fr"> 22/05/2023 </i> </td>
+          </tr>   
+        </tbody>
+      </table>
+      <span class="imgDrag">
+        <img  src="/Yol-ide/PageGestionDeFichier/assets/Frame 683.png" alt="Drag">
+        <span class="imgIDE">
+          <img src="/Yol-ide/PageGestionDeFichier/assets/Frame 701.png" alt="open ide">
+          <img src="/Yol-ide/PageGestionDeFichier/assets/Frame 701.png" alt="open ide" style="padding-top: 40px ;">
+        </span>
+      </span>
+    </nav>
+  </body>
+  <script>
+// Désactiver le clic droit sur la page entière
+document.addEventListener('contextmenu', event => {
+  event.preventDefault();
+});
+
+
+  </script>
 </html>
+
+<!--
+___________________________________________________________________________________________________________________
+|                                                                                                                  |
+|  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,@@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  |
+|  ,@@@@@@@,,,,,,,@@@@@@#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,&@@@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  |
+|  ,,(@@@@@@,,,,,@@@@@@*,,,,,,,,,,,,,,,,,,,,@@@@,,,,,,,,,,,,,,,,,,,,,,,,,,,*@@@#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  |
+|  ,,,,@@@@@@*,#@@@@@@,,,,,,,,,,,,,,,,,,,,,&@@@@@,,,,,,,,,,,,,,,,,,,,,,,,,,%@@@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  |
+|  ,,,,,&@@@@@@@@@@@/,,,,(@@@@@@@@@@@@,,,,,&@@@@@,,,,,,,,,,,,,,,*@@@@@@@@@/@@@#,,,,,@@@@@@@@@@,,,%@@@,,,,,,,*@@@%  |
+|  ,,,,,,/@@@@@@@@@*,,,%@@@@@@@@@@@@@@@@,,,&@@@@@,,,,,,,,,,,,,(@@@@*,,,,,@@@@@*,,/@@@@,,,,,*@@@%,*@@@#,,,,,%@@@*,  |
+|  ,,,,,,,,@@@@@@&,,,,/@@@@@/,,,,,,@@@@@@,,&@@@@@,,,,,,,,,,,,#@@@*,,,,,,,,@@@@,,(@@@********(@@@,,&@@@,,,,@@@@,,,  |
+|  ,,,,,,,,&@@@@@/,,,,/@@@@@/,,,,,,@@@@@@,,&@@@@@,,,,,,,,,,,,@@@%,,,,,,,,*@@@%,,@@@@@@@@@@@@@@@/,,,@@@#,(@@@/,,,,  |
+|  ,,,,,,,,&@@@@@/,,,,,@@@@@@@/,*%@@@@@@/,,&@@@@@,,,,@@@@(,,,@@@@,,,,,,,*@@@@,,,@@@@,,,,,,,,,,,,,,,/@@@&@@@,,,,,,  |
+|  ,,,,,,,,&@@@@@/,,,,,,/@@@@@@@@@@@@@@,,,,&@@@@@,,,@@@@@@@,,,#@@@@@%@@@@@@@%,,,,&@@@@&%%@@@@@,,,,,,&@@@@%,,,,,,,  |
+|  ,,,,,,,,/@@@@@,,,,,,,,,,,#@@@@@@(,,,,,,,/@@@@(,,,,*@@@,,,,,,,,%@@@@(,,#@@,,,,,,,,#@@@@@(,,,,,,,,,,@@@,,,,,,,,,  |
+|                                                                                                                  |
+|__________________________________________________________________________________________________________________|
+
+-->
